@@ -22,7 +22,7 @@ struct ContentView: View {
         }
         .statusBar(hidden: true)
     }
-}
+} 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
