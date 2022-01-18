@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isLightOn = true
+    var bgColor: Color {
+        isLightOn ? .white : .black
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            // Fill the whole screen with our color.
+            bgColor.ignoresSafeArea()
+            // Catch the main tap only in the safe area.
+            bgColor.onTapGesture { isLightOn.toggle() }
+        }
+        .statusBar(hidden: true)
     }
 }
 
