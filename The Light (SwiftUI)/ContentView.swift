@@ -70,11 +70,10 @@ struct ContentView: View {
     }
     
     func buttonForMode(_ buttonMode: AppMode) -> some View {
-        Button {
-            tapButtonForMode(buttonMode)
-        } label: {
-            ModeImage(imageName: buttonMode.rawValue, isSelected: buttonMode == appMode)
-        }
+        ModeImage(imageName: buttonMode.rawValue, isSelected: buttonMode == appMode)
+            .onTapGesture {
+                tapButtonForMode(buttonMode)
+            }
     }
     
     // MARK: - Interaction
