@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // MARK: – States
+    
     enum AppMode: String {
         case screenSimpleLight = "ScreenSimpleLight"
         case screenTrafficLights = "ScreenTrafficLights"
@@ -36,13 +38,15 @@ struct ContentView: View {
         }
     }
     
-    var buttonColor: Color {
+    var buttonIconColor: Color {
         if appMode == .screenTrafficLights {
             return Color( trafficLightsColors[trafficLightsIndex].iconColor )
         } else {
             return Color( UIColor(white: 0.5, alpha: 1) )
         }
     }
+    
+    // MARK: - Layout
     
     var body: some View {
         ZStack {
@@ -60,12 +64,12 @@ struct ContentView: View {
                     buttonForMode(.cameraAndScreenLights)
                 }
                 .padding(.bottom, 33)
-                .foregroundColor(buttonColor)
+                .foregroundColor(buttonIconColor)
             }
         }
         .statusBar(hidden: true)
         .onAppear {
-            startMode(.screenSimpleLight)
+            startNewMode(.screenSimpleLight)
         }
     }
     
@@ -79,7 +83,7 @@ struct ContentView: View {
     // MARK: - Interaction
     func tapButtonForMode(_ buttonMode: AppMode) {
         if appMode != buttonMode {
-            startMode(buttonMode)
+            startNewMode(buttonMode)
         } else {
             tapScreen()
         }
@@ -99,7 +103,7 @@ struct ContentView: View {
         }
     }
     
-    func startMode(_ newMode: AppMode) {
+    func startNewMode(_ newMode: AppMode) {
         appMode = newMode
         switch newMode {
         case .screenSimpleLight:
