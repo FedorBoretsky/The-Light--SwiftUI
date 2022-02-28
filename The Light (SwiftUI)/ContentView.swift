@@ -69,7 +69,7 @@ struct ContentView: View {
         }
         .statusBar(hidden: true)
         .onAppear {
-            startNewMode(.screenSimpleLight)
+            beginMode(.screenSimpleLight)
         }
     }
     
@@ -83,7 +83,7 @@ struct ContentView: View {
     // MARK: - Interaction
     func tapButtonForMode(_ buttonMode: AppMode) {
         if appMode != buttonMode {
-            startNewMode(buttonMode)
+            beginMode(buttonMode)
         } else {
             tapScreen()
         }
@@ -103,7 +103,7 @@ struct ContentView: View {
         }
     }
     
-    func startNewMode(_ newMode: AppMode) {
+    func beginMode(_ newMode: AppMode) {
         appMode = newMode
         switch newMode {
         case .screenSimpleLight:
