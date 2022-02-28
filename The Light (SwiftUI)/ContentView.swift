@@ -85,6 +85,8 @@ struct ContentView: View {
         if appMode != buttonMode {
             beginMode(buttonMode)
         } else {
+            // Use 2nd, 3rd etc. taps on the buttons to control the current mode.
+            // No distraction 'reposition yor  finger' for user.
             tapScreen()
         }
     }
