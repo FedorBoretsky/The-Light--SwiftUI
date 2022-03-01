@@ -25,7 +25,7 @@ struct ContentView: View {
     @State var isScreenLightOn = true
     @State var trafficLightsIndex = 0
     
-    var screenColor: Color {
+    var screenColorView: Color {
         switch appMode {
         case .screenSimpleLight:
             return isScreenLightOn ? .white : .black
@@ -50,10 +50,12 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            // Fill the whole screen with our color.
-            screenColor.ignoresSafeArea()
-            // Catch the main tap only in the safe area.
-            screenColor.onTapGesture { tapScreen() }
+            // Non-interactive object is for filling the whole screen with desired color.
+            screenColorView
+                .ignoresSafeArea()
+            // Another object is for catching the main tap only in the safe area.
+            screenColorView
+                .onTapGesture { tapScreen() }
             // Mode switching
             VStack{
                 Spacer()
