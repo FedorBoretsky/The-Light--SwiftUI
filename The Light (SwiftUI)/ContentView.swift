@@ -18,7 +18,7 @@ struct ContentView: View {
         case cameraAndScreenLights = "CameraAndScreenLights"
     }
     
-    @State var appMode: AppMode = .screenTrafficLights
+    @State var appMode: AppMode = .screenSimpleLight
     @State var isCameraLightOn = false {
         didSet { toggleTorch(on: isCameraLightOn)}
     }
@@ -129,7 +129,6 @@ struct ContentView: View {
         let iconColor: UIColor
     }
     
-    // Traffic light colors.
     let trafficLightsColors: [BacgroundIconColorPair] = [
         BacgroundIconColorPair(backgroundColor: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1), iconColor: UIColor(white: 1, alpha: 0.78)),
         BacgroundIconColorPair(backgroundColor: #colorLiteral(red: 0.9490196078, green: 0.9254901961, blue: 0.3490196078, alpha: 1), iconColor: UIColor(white: 0.5, alpha: 1)),
