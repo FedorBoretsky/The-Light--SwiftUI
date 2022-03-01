@@ -2,7 +2,7 @@
 //  ModeImage.swift
 //  The Light (SwiftUI)
 //
-//  Created by Fedor Boretskiy on 24.02.2022.
+//  Created by Fedor Boretskiy on 01.03.2022.
 //
 
 import SwiftUI

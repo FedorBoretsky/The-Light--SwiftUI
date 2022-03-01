@@ -11,11 +11,11 @@
 		9F16FB5C279740DD00A51967 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F16FB5B279740DD00A51967 /* ContentView.swift */; };
 		9F16FB5E279740DE00A51967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F16FB5D279740DE00A51967 /* Assets.xcassets */; };
 		9F16FB61279740DE00A51967 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F16FB60279740DE00A51967 /* Preview Assets.xcassets */; };
-		9F1B0DCB27C8230600602E3B /* ModeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1B0DCA27C8230600602E3B /* ModeImage.swift */; };
 		9FB8B79727CE5E80008DB537 /* Mode ScreenLight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB8B79327CE5E80008DB537 /* Mode ScreenLight@1x.png */; };
 		9FB8B79827CE5E80008DB537 /* Mode TrafficLights@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB8B79427CE5E80008DB537 /* Mode TrafficLights@1x.png */; };
 		9FB8B79927CE5E80008DB537 /* Mode CameraAndScreenLight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB8B79527CE5E80008DB537 /* Mode CameraAndScreenLight@1x.png */; };
 		9FB8B79A27CE5E80008DB537 /* Mode CameraLight@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB8B79627CE5E80008DB537 /* Mode CameraLight@1x.png */; };
+		9FB8B79C27CE624B008DB537 /* ModeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8B79B27CE624B008DB537 /* ModeImage.swift */; };
 		9FCF14FE27C964F200AA54F1 /* toggleTorch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF14FD27C964F200AA54F1 /* toggleTorch.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,11 +25,11 @@
 		9F16FB5B279740DD00A51967 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9F16FB5D279740DE00A51967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F16FB60279740DE00A51967 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9F1B0DCA27C8230600602E3B /* ModeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeImage.swift; sourceTree = SOURCE_ROOT; };
 		9FB8B79327CE5E80008DB537 /* Mode ScreenLight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode ScreenLight@1x.png"; sourceTree = "<group>"; };
 		9FB8B79427CE5E80008DB537 /* Mode TrafficLights@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode TrafficLights@1x.png"; sourceTree = "<group>"; };
 		9FB8B79527CE5E80008DB537 /* Mode CameraAndScreenLight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode CameraAndScreenLight@1x.png"; sourceTree = "<group>"; };
 		9FB8B79627CE5E80008DB537 /* Mode CameraLight@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mode CameraLight@1x.png"; sourceTree = "<group>"; };
+		9FB8B79B27CE624B008DB537 /* ModeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeImage.swift; sourceTree = "<group>"; };
 		9FBB41A427CBEA7F00543117 /* The-Light--SwiftUI--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "The-Light--SwiftUI--Info.plist"; sourceTree = SOURCE_ROOT; };
 		9FCF14FD27C964F200AA54F1 /* toggleTorch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toggleTorch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,7 +67,7 @@
 				9FB8B79227CE5E80008DB537 /* Illustrations for Readme */,
 				9F16FB59279740DD00A51967 /* The_Light__SwiftUI_App.swift */,
 				9F16FB5B279740DD00A51967 /* ContentView.swift */,
-				9F1B0DCA27C8230600602E3B /* ModeImage.swift */,
+				9FB8B79B27CE624B008DB537 /* ModeImage.swift */,
 				9FCF14FD27C964F200AA54F1 /* toggleTorch.swift */,
 				9F16FB5D279740DE00A51967 /* Assets.xcassets */,
 				9FBB41A427CBEA7F00543117 /* The-Light--SwiftUI--Info.plist */,
@@ -169,9 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F1B0DCB27C8230600602E3B /* ModeImage.swift in Sources */,
 				9F16FB5C279740DD00A51967 /* ContentView.swift in Sources */,
 				9FCF14FE27C964F200AA54F1 /* toggleTorch.swift in Sources */,
+				9FB8B79C27CE624B008DB537 /* ModeImage.swift in Sources */,
 				9F16FB5A279740DD00A51967 /* The_Light__SwiftUI_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
