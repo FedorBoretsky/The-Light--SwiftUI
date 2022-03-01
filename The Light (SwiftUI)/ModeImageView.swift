@@ -1,5 +1,5 @@
 //
-//  ModeImage.swift
+//  ModeImageView.swift
 //  The Light (SwiftUI)
 //
 //  Created by Fedor Boretskiy on 01.03.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ModeImage: View {
+struct ModeImageView: View {
     
     let imageName: String
     let isSelected: Bool
@@ -20,10 +20,10 @@ struct ModeImage: View {
 struct ModeImage_Previews: PreviewProvider {
     static var previews: some View {
         HStack(alignment: .bottom, spacing: 11) {
-            ModeImage(imageName: "ScreenSimpleLight", isSelected: true)
-            ModeImage(imageName: "ScreenTrafficLights", isSelected: false)
-            ModeImage(imageName: "CameraLight", isSelected: false)
-            ModeImage(imageName: "CameraAndScreenLights", isSelected: false)
+            ModeImageView(imageName: "ScreenSimpleLight", isSelected: true)
+            ModeImageView(imageName: "ScreenTrafficLights", isSelected: false)
+            ModeImageView(imageName: "CameraLight", isSelected: false)
+            ModeImageView(imageName: "CameraAndScreenLights", isSelected: false)
         }
         .foregroundColor(.red)
     }

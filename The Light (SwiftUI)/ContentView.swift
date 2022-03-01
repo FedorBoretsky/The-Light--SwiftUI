@@ -76,7 +76,7 @@ struct ContentView: View {
     }
     
     func buttonForMode(_ buttonMode: AppMode) -> some View {
-        ModeImage(imageName: buttonMode.rawValue, isSelected: buttonMode == appMode)
+        ModeImageView(imageName: buttonMode.rawValue, isSelected: buttonMode == appMode)
             .onTapGesture {
                 tapButtonForMode(buttonMode)
             }
