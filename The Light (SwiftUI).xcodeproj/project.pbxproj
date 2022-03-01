@@ -22,6 +22,7 @@
 		9FB8B7A627CE6445008DB537 /* Screenshot 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB8B7A127CE6445008DB537 /* Screenshot 5.png */; };
 		9FB8B7A727CE6445008DB537 /* Screenshot 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB8B7A227CE6445008DB537 /* Screenshot 4.png */; };
 		9FCF14FE27C964F200AA54F1 /* toggleTorch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF14FD27C964F200AA54F1 /* toggleTorch.swift */; };
+		9FE23CDE27CE6A7E006B6C82 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9FE23CDD27CE6A7E006B6C82 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		9FB8B7A227CE6445008DB537 /* Screenshot 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 4.png"; sourceTree = "<group>"; };
 		9FBB41A427CBEA7F00543117 /* The-Light--SwiftUI--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "The-Light--SwiftUI--Info.plist"; sourceTree = SOURCE_ROOT; };
 		9FCF14FD27C964F200AA54F1 /* toggleTorch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toggleTorch.swift; sourceTree = "<group>"; };
+		9FE23CDD27CE6A7E006B6C82 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		9F16FB4D279740DD00A51967 = {
 			isa = PBXGroup;
 			children = (
+				9FE23CDD27CE6A7E006B6C82 /* README.md */,
 				9F16FB58279740DD00A51967 /* The Light (SwiftUI) */,
 				9F16FB57279740DD00A51967 /* Products */,
 			);
@@ -182,6 +185,7 @@
 				9FB8B7A427CE6445008DB537 /* Screenshot 2.png in Resources */,
 				9FB8B79927CE5E80008DB537 /* Mode CameraAndScreenLight@1x.png in Resources */,
 				9FB8B7A527CE6445008DB537 /* Screenshot 1.png in Resources */,
+				9FE23CDE27CE6A7E006B6C82 /* README.md in Resources */,
 				9F16FB61279740DE00A51967 /* Preview Assets.xcassets in Resources */,
 				9F16FB5E279740DE00A51967 /* Assets.xcassets in Resources */,
 				9FB8B7A727CE6445008DB537 /* Screenshot 4.png in Resources */,
