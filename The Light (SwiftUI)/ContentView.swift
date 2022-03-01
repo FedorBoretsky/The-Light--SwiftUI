@@ -96,7 +96,7 @@ struct ContentView: View {
         case .screenSimpleLight:
             isScreenLightOn.toggle()
         case .screenTrafficLights:
-            trafficLightsIndex = trafficLightsSwitchIndex()
+            trafficLightsIndex = trafficLightsNewIndex()
         case .cameraLight:
             isCameraLightOn.toggle()
         case .cameraAndScreenLights:
@@ -136,7 +136,7 @@ struct ContentView: View {
     ]
     
     // Cycling through colors.
-    func trafficLightsSwitchIndex() -> Int {
+    func trafficLightsNewIndex() -> Int {
         let next = trafficLightsIndex + 1
         return (next < trafficLightsColors.count) ? next : 0
     }
