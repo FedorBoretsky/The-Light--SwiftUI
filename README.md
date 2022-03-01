@@ -2,7 +2,7 @@
 
 The Light project from App Development with Swift curriculum Moscow Digital Academy 2022. 
 
-SwiftUI version.
+SwiftUI version (see UIKit implementation [here](https://github.com/FedorBoretsky/The-Light--UIKit)).
 
 ## Functionality
 
